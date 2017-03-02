@@ -145,13 +145,13 @@ def make_assertions(commit_hash, fingerprint, parents, patch, diff_lines):
                 if p.target[2:] != target_path:
                     errors["name"] = 'Target file %s is not named %s, make sure the path and sha1 hexdigest is correct' % (p.target[2:], target_path)
 
-                 schema = Schema({
+                schema = Schema({
                     Required('parent_sha1'): Any("", All(str, Length(min=40, max=40))),
                     Required('data'): Any(dict, str)
                 })
 
-                 Validate it!
-                 schema(data)
+                # Validate it!
+                schema(data)
 
             else:
                 errors['name'] = "Invalid extension"
