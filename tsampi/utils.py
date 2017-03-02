@@ -1,4 +1,3 @@
-import argparse
 import sys
 import logging
 import glob
@@ -47,10 +46,6 @@ def paginate(size):
             return results
         return wrapper
     return inner
-
-
-from cStringIO import StringIO
-import sys
 
 
 class Capturing(list):
