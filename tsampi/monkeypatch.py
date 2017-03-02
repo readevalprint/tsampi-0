@@ -2,7 +2,7 @@ import sys
 import os
 import platform
 
-sys.path.insert(0, '/tmp/tsampi/lib_pypy')  # Should be first on the path
+sys.path.insert(0, '/tmp/tsampi/pypy/lib_pypy')  # Should be first on the path
 sys.path.append('/tmp/tsampi/pypy/lib-python')
 sys.path.append('/tmp/apps/')  # This should be last, for reasons.
 
