@@ -1,0 +1,9 @@
+# for now, these have to be manually added
+apps/
+tsampi/
+
+
+*.pyc
+.coverage
+__pycache__
+*.swp

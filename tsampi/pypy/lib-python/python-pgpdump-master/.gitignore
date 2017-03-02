@@ -1,0 +1,7 @@
+/build/
+/dist/
+/MANIFEST
+/tags
+__pycache__/
+*.pyc
+*~
